@@ -1,0 +1,278 @@
+/* Add your CSS to this file */
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+header{
+    background: white;
+}
+
+header .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+header .container h1{
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 100px;
+    display: inline;
+}
+
+header .container ul{
+    grid-column-start: 3 ;
+    grid-column-end: 2;
+    display: flex;
+    list-style-type: none;
+    width : 350px;
+    flex-wrap: wrap;
+    margin-top: 30px; 
+}
+
+header .container ul li{
+    flex: auto;
+}
+
+header .container a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #6b7280;
+}
+
+header .container a:hover{
+    color: #5A67D8;
+
+}
+
+.overview-hero .container{
+    display: grid;
+    grid-template-columns: 280px auto 50px;
+    grid-template-rows: auto;
+    background: #E2E8F0;
+
+}
+
+.overview-hero .container .overview-hero-image img{
+    display: flex;
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px ;
+    grid-column-start: 2;
+    grid-column-end: 1;
+}
+
+.overview-hero .container .overview-hero-text{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-right: 20px;
+}
+
+.learn-about .container h2{
+    padding-left: 100px;
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    border-color: #E2E8F0;
+    margin: 0 auto;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card .card-body{
+    line-height:  1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.card-body h3{
+    margin-top: 0;
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.card-body p{
+    margin-bottom: 0;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: auto 380px;
+    grid-template-rows: auto;
+    background-color:#4A5568;
+    color: white;
+    
+}
+
+.testing .container .testing-desciption{
+    padding-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.testing .container .cta{
+    padding-left: 100px;
+    margin-top: 105px;
+    margin-bottom: 30px ;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.testing .container .cta a{
+    text-decoration: none;
+}
+
+.cta .btn{
+    padding: 0.75em 2em;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    text-transform: uppercase;
+    background:#48BB78;
+    border-radius: 5px;
+    transition: 
+        transform 250ms ease-in-out, 
+        opacity 250ms linear;
+
+}
+
+.cta .btn:hover {
+    opacity: 0.7;
+}
+
+.stories .container h2{
+    padding-left: 100px;
+    color: #5A67D8;
+}
+
+.stories .container h3{
+    font-size: 18px;
+}
+
+.stories .container article{
+    display: grid;
+    grid-template-columns: 280px auto 45px;
+    grid-template-rows: auto auto;
+    background-color: white;
+}
+
+.stories .container img{
+    margin-left: 100px;
+    margin-top: 25px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    grid-column-start: 2;
+    grid-column-end: 1;
+}
+
+.article-body a{
+    text-decoration: none;
+    color: #5A67D8;
+}
+
+.newsletter .container {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr ;
+    grid-template-columns: 1fr 540px 1fr;
+    background: #48BB78;
+    color: white;
+}
+
+.newsletter h3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+
+.newsletter p{ 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.newsletter form{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.newsletter .form-group{
+    display: flex;
+    float: left;
+    height: 40px;
+    margin-left: 300px;
+}
+.newsletter .btn{
+  
+    display: block;
+    float: right;
+    margin-right: 340px;
+    padding: 0.75em 2em;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    text-transform: uppercase;
+    background:#5A67D8;
+    border-radius: 0.25em;
+    transition: 
+        transform 250ms ease-in-out, 
+        opacity 250ms linear;
+
+}
+
+.newsletter .btn:hover {
+    opacity: 0.7;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: auto;
+    background: #4A5568;
+    color: white;
+}
+
+footer .container p{
+    margin-left: 100px;
+}
